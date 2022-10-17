@@ -11,3 +11,6 @@ body {
   min-height: 100vh;
   background-color: #F4F5F7;
 }
+a {
+  text-decoration: none;
+}
