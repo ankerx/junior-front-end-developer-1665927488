@@ -1,0 +1,16 @@
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;
+    padding: 8px 32px;
+}
+
+
+.avatar img {
+    width: 42px;
+    padding: 2px;
+    border: 1px solid #6B778C;
+    border-radius: 50%;
+    
+}
