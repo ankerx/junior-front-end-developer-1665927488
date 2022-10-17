@@ -1,0 +1,27 @@
+.wrapper {
+    width: 320px;
+
+    margin: 1px 32px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.heading{
+    background-color: #FFFFFF;
+    color: #242325;
+    padding: 23px;
+    margin:1px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container {
+    height: 600px;
+    padding-top: 24px;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: 100%;
+    }
+}
