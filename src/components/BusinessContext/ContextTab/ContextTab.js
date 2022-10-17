@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { clsx } from "clsx";
+
 export const ContextTab = ({ context }) => {
-  console.log(context);
   const classes = clsx({
     [styles.old]: context.label === "old",
     [styles.active]: context.label === "active",
