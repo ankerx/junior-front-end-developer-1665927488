@@ -1,4 +1,45 @@
 .wrapper {
     width: 100%;
     padding-left: 5rem;
+    color: #6B778C
+}
+.title {
+    font-size: 21px;
+    font-weight: 500;
+    color: #242325;
+    margin-bottom: 13px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    
+}
+
+.author{
+    font-size: 16px;
+    color:#242325
+}
+
+
+.img {
+    width: 42px;
+    padding: 2px;
+    border: 1px solid #6B778C;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.content {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.bullet {
+    width: 3px;
+    height: 3px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #6B778C;
 }
