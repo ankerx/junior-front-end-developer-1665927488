@@ -45,7 +45,7 @@ export const tasks = [
     id: 3,
     title: "My third dummy task",
     status: "active",
-    context: [businessContext[1]],
+    context: [businessContext[0]],
   },
   {
     id: 4,

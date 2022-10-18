@@ -1,15 +1,25 @@
 import styles from "./styles.module.css";
 import { clsx } from "clsx";
+import { useState } from "react";
 
-export const ContextTab = ({ context }) => {
+export const ContextTab = ({ context, handleClick }) => {
+  const [clicked, setClicked] = useState(false);
   const classes = clsx({
     [styles.old]: context.label === "old",
     [styles.active]: context.label === "active",
   });
   return (
-    <div className={`${styles.wrapper} ${classes}`}>
+    <div
+      className={`${styles.wrapper} ${classes}`}
+      onClick={() => {
+        handleClick(context.id);
+        setClicked(true);
+      }}
+    >
       <div className={styles.info}>
-        {context.label === "new" && <span className={styles.new}>NEW</span>}
+        {context.label === "new" && !clicked && (
+          <span className={styles.new}>NEW</span>
+        )}
         <p>{context.author.name}</p>
         <span className={styles.bullet}></span>
         <p> {context.created_at.slice(3, 11)}</p>
